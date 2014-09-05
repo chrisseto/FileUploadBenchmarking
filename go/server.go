@@ -24,7 +24,7 @@ func UploadHandler(w http.ResponseWriter, req *http.Request) {
 func main() {
      http.HandleFunc("/", UploadHandler)
 
-     err := http.ListenAndServe(":5555", nil)
+     err := http.ListenAndServe(":6666", nil)
      if err != nil {
         log.Fatal("Error: ", err)
      }
