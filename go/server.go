@@ -13,7 +13,7 @@ func UploadHandler(w http.ResponseWriter, req *http.Request) {
                      return
                  }
                  m := req.MultipartForm
-                 files := m.File["data"]
+                 files := m.File["file"]
                  log.Print(files[0].Filename)
 
             default:
